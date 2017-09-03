@@ -204,8 +204,8 @@ ASS = assigner()
 #instantiate launchpad class
 lp = LP()
 
-#establish serial connection to arduinos so sensor data can be accessed
-ser1 = serial.Serial('', ) #arduino mega
+#establish serial connection to arduinos so sensor data can be accessed (these arguments need to be filled in before running. They change depending on the arduino's serial location) => ('location',baud-rate)
+ser1 = serial.Serial('', ) #arduino mega 
 ser2 = serial.Serial('', ) #arduino micro
 
 
