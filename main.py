@@ -9,12 +9,6 @@
 # ----------------------------->>> Free To Use (give credit)
 # brianbartz1@gmail.com <<<---------------------------------
 
-
-                                                                                                                                                                                        
-                                                                                                                                                                                                                                                                                                                                                                                                                
-                                                                                                                                                                                                                                                                                                                                                                                                                                 
-                                                                                                                                                      
-
 import time
 import Adafruit_PCA9685
 import serial
