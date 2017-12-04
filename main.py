@@ -41,7 +41,7 @@ class motor:
             self.lv = None              #keeps track of the last sensor value this motor sent out         
             self.height = 0             #height will be defined as 0 being the middle position, with a max and min height of around -10 to 10(TBD)
             self.direction = 's'        #direction can be 's' for stopped, or 'u' and 'd' for up and down
-            self.instruction = 0        #stores the motors current instruction when the main loop is runnign
+            self.instruction = 0        #stores the motors current instruction when the main loop is running
             self.channel = channel      #the motors channel number on each of the servo breakout boards (0-15)
             self.address = address      #which of the two servo breakouts the motor is attached to
             self.pwm = self.i2cAddress(self.address)    #assigns a pwm object (from the adafruit library) based on the i2c address of its respective board
@@ -109,7 +109,9 @@ class motor:
             self.direction = "s"
 
 
-#   A class which handles the entire group of motors, and addresses them while running the simulation	
+#   A class which handles the entire group of motors, and addresses them while running the simulation
+class motor_group:
+	
 	def __init__(self):
 
         self.num_motors = 25
